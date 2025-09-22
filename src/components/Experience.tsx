@@ -147,12 +147,12 @@ export function Experience() {
               <div className="text-gray-600">Years of Experience</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-blue-600 mb-2">8+</div>
+              <div className="text-3xl font-bold text-blue-600 mb-2">10+</div>
               <div className="text-gray-600">Major Projects</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-blue-600 mb-2">6</div>
-              <div className="text-gray-600">Organizations Worked With</div>
+              <div className="text-3xl font-bold text-blue-600 mb-2">20+</div>
+              <div className="text-gray-600">Courses Completed</div>
             </div>
           </div>
         </div>

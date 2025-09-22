@@ -59,7 +59,7 @@ export function Hero() {
               <div className="text-gray-600">Years Experience</div>
             </div>
             <div className="text-center transform hover:scale-110 transition-all duration-300">
-              <div className="text-3xl font-bold text-blue-600 animate-bounce-subtle delay-100">8+</div>
+              <div className="text-3xl font-bold text-blue-600 animate-bounce-subtle delay-100">10+</div>
               <div className="text-gray-600">Projects Completed</div>
             </div>
             <div className="text-center transform hover:scale-110 transition-all duration-300">
