@@ -67,7 +67,7 @@ export function Education() {
     {
       degree: "Engineer's Degree in Computer Science",
       institution: "Abdelhamid Mehri Constantine 2 University",
-      period: "Sep 2018 - May 2022",
+      period: "Sep 2022 - May 2027",
       description: "Comprehensive computer science education focusing on software engineering, algorithms, and system design. Participated in team projects and gained hands-on experience in software development.",
       achievements: [
         "Led team projects including Health Check mobile application",
@@ -79,7 +79,7 @@ export function Education() {
     {
       degree: "Baccalaureate Diploma in Experimental Sciences",
       institution: "High School",
-      period: "Graduated 2018",
+      period: "Sep 2018 - Jul 2022",
       gpa: "16.52/20",
       description: "Strong foundation in sciences and mathematics, providing excellent preparation for computer science studies.",
       achievements: [
@@ -94,38 +94,52 @@ export function Education() {
     {
       name: "Algorithms & Problem Solving Level 5",
       issuer: "Programming Advices",
-      date: "Aug 2022 - Jul 2027",
-      credentialId: "PA-ALGO-L5-2022"
+      date: ""
     },
     {
-      name: "C# Programming Fundamentals",
+      name: "Data Structures Level 2 in C#",
       issuer: "Programming Advices",
-      date: "2023",
-      credentialId: "PA-CSHARP-2023"
+      date: ""
     },
     {
-      name: "Object-Oriented Programming in C++",
+      name: "C# Programming Level 2",
       issuer: "Programming Advices",
-      date: "2023",
-      credentialId: "PA-CPP-OOP-2023"
+      date: ""
     },
     {
-      name: "Database Design and SQL",
+      name: "Database Level2 - Concepts & T-SQL",
       issuer: "Programming Advices",
-      date: "2023",
-      credentialId: "PA-SQL-2023"
+      date: ""
     },
     {
-      name: "Data Structures and Algorithms",
+      name: "Introduction to RESTful API",
       issuer: "Programming Advices",
-      date: "2022",
-      credentialId: "PA-DSA-2022"
+      date: ""
     },
     {
-      name: ".NET Framework Development",
+      name: "OOP As It Should Be In C#",
       issuer: "Programming Advices",
-      date: "2024",
-      credentialId: "PA-DOTNET-2024"
+      date: ""
+    },
+    {
+      name: "Full Real Project",
+      issuer: "Programming Advices",
+      date: ""
+    },
+    {
+      name: "C# & Database Connectivity",
+      issuer: "Programming Advices",
+      date: ""
+    },
+    {
+      name: "Inspiring and Motivating Individuals",
+      issuer: "University of Michigan",
+      date: ""
+    },
+    {
+      name: "Speaking to persuade: Motivating audiences with solid arguments and moving language",
+      issuer: "University of Washington",
+      date: ""
     }
   ];
 

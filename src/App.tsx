@@ -8,6 +8,7 @@ import { Projects } from './components/Projects'
 import { Education } from './components/Education'
 import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
+import './animations.css'
 
 function App() {
   useEffect(() => {
