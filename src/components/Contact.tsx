@@ -1,28 +1,4 @@
-import { useState } from 'react';
-
 export function Contact() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    // You can add actual email sending logic here
-    alert('Thank you for your message! I\'ll get back to you soon.');
-    setFormData({ name: '', email: '', subject: '', message: '' });
-  };
 
   const contactInfo = [
     {
@@ -98,23 +74,23 @@ export function Contact() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="max-w-4xl mx-auto">
           {/* Contact Information */}
           <div>
-            <h3 className="text-2xl font-semibold text-gray-900 mb-6">Let's Connect</h3>
-            <p className="text-gray-600 mb-8 leading-relaxed">
+            <h3 className="text-2xl font-semibold text-gray-900 mb-6 text-center">Let's Connect</h3>
+            <p className="text-gray-600 mb-8 leading-relaxed text-center">
               I'm always excited to hear about new opportunities and interesting projects. 
               Whether you have a specific project in mind or just want to chat about technology, 
               feel free to reach out!
             </p>
 
             {/* Contact Info */}
-            <div className="space-y-4 mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
               {contactInfo.map((info, index) => (
                 <a
                   key={index}
                   href={info.href}
-                  className="flex items-center space-x-4 p-4 bg-white rounded-lg hover:shadow-md transition-shadow duration-300"
+                  className="flex flex-col items-center text-center space-y-2 p-6 bg-white rounded-lg hover:shadow-md transition-shadow duration-300"
                 >
                   <div className="text-blue-600">{info.icon}</div>
                   <div>
@@ -126,9 +102,9 @@ export function Contact() {
             </div>
 
             {/* Social Links */}
-            <div>
+            <div className="text-center">
               <h4 className="text-lg font-semibold text-gray-900 mb-4">Follow Me</h4>
-              <div className="flex space-x-4">
+              <div className="flex justify-center space-x-4">
                 {socialLinks.map((social) => (
                   <a
                     key={social.name}
@@ -142,86 +118,6 @@ export function Contact() {
                   </a>
                 ))}
               </div>
-            </div>
-          </div>
-
-          {/* Contact Form */}
-          <div>
-            <div className="bg-white rounded-2xl shadow-sm p-8">
-              <h3 className="text-2xl font-semibold text-gray-900 mb-6">Send a Message</h3>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                      Name *
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      required
-                      value={formData.name}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200"
-                      placeholder="Your Name"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                      Email *
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      required
-                      value={formData.email}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200"
-                      placeholder="your.email@example.com"
-                    />
-                  </div>
-                </div>
-                
-                <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
-                    Subject *
-                  </label>
-                  <input
-                    type="text"
-                    id="subject"
-                    name="subject"
-                    required
-                    value={formData.subject}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200"
-                    placeholder="Project Inquiry"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                    Message *
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    required
-                    rows={6}
-                    value={formData.message}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200 resize-none"
-                    placeholder="Tell me about your project or just say hello!"
-                  ></textarea>
-                </div>
-                
-                <button
-                  type="submit"
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
-                >
-                  Send Message
-                </button>
-              </form>
             </div>
           </div>
         </div>
