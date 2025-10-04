@@ -138,11 +138,12 @@ export function Projects() {
   const projects: ProjectItem[] = [
     {
       title: "ShopyWear - E-commerce Platform",
-      description: "Full-stack e-commerce web application for clothing with advanced filtering, shopping cart, order management, and review system. Features both customer interface and administrative dashboard.",
+      description: "Full-stack e-commerce web application for clothing with advanced filtering, shopping cart, product and order management. Features both customer interface and administrative dashboard.",
       image: "🛍️",
       imageUrl: ShopyWearImage,
       technologies: ["React", "TypeScript", "Tailwind CSS", "ASP.NET Core", "C#", "SQL Server", "E-commerce"],
-      liveUrl: "https://drive.google.com/drive/folders/1ZE9_CB-Guegoaph2bGnjaKJXcdXnHAJ2",
+      liveUrl: "https://shopywear.vercel.app/",
+      videoUrl: "https://drive.google.com/file/d/1K_aUONCcfdSuidfqq0EyKxVoayewlioS/view?usp=sharing",
       featured: true,
     },
     {
